@@ -1,0 +1,21 @@
+{
+  "name": "mysticvault",
+  "version": "1.0.0",
+  "main": "index.js",
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.5",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.11"
+  },
+  "dependencies": {
+    "semver": "^7.6.3",
+    "web3": "^4.13.0"
+  }
+}

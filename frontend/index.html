@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mystic Vault</title>
+  
+  <!-- Include Magic Animations CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.css">
+  
+  <!-- Include Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Include Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sparkles Background -->
+  <div class="sparkles"></div>
+  
+  <!-- Header with Padlock and Sparkles Icons -->
+  <h1 class="magictime puffIn">
+    <i class="fas fa-lock icon" aria-label="Padlock"></i>
+    Mystic Vault
+    <i class="fas fa-magic icon" aria-label="Sparkles"></i>
+  </h1>
+  
+  <!-- Store Secret Spell Section with Wand Icon -->
+  <div class="store-container">
+    <input type="text" id="inputData" placeholder="Enter your secret spell here..." aria-label="Secret Spell Input" />
+    <button id="setData" class="magictime puffIn" aria-label="Store Secret Spell">
+      <i class="fas fa-wand-magic icon"></i>Store Spell
+    </button>
+  </div>
+  
+  <!-- Retrieve Secret Spell Section with Orb Icon -->
+  <div class="retrieve-container">
+    <button id="getData" class="magictime puffIn" aria-label="Retrieve Secret Spell">
+      <i class="fas fa-circle-notch icon"></i>Retrieve Secret Spell
+    </button>
+    <div id="displayData" class="magictime fadeIn" aria-live="polite">
+      <i class="fas fa-magic"></i> Your secret spell will appear here...
+    </div>
+    <button id="clearDisplay" aria-label="Clear Retrieved Spell">Clear</button>
+  </div>
+  
+  <!-- Loading Spinner -->
+  <div id="loading" style="display: none;" class="magictime puffIn" aria-live="assertive">
+    <i class="fas fa-spinner fa-spin"></i> Processing...
+  </div>
+  
+  <!-- Notification Message -->
+  <div id="notification" class="magictime fadeIn" role="alert" aria-live="assertive"></div>
+  
+  <!-- Include Web3.js -->
+  <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+  <!-- Link to External JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
