@@ -99,16 +99,18 @@ module.exports = {
 
 ### Frontend Setup
 
-1. **Serve the Frontend:**
+ 1\. **Serve the Frontend**
 
-   You can use a simple HTTP server to serve the frontend files. One way is to use the `serve` package.
+In the `frontend` directory, start a simple HTTP server:
 
-   ```bash
-   npm install -g serve
-   serve frontend
-   ```
+```bash
+cd frontend
+npx http-server . -c-1 -p 8080
+```
 
-   Alternatively, you can open the `frontend/index.html` file directly in your browser, but using a server is recommended to avoid CORS issues.
+press 'y' for package installation if asked
+
+Navigate to `http://localhost:8080` in your browser.
 
 ## Usage
 

@@ -30,7 +30,7 @@ var contractABI = [
 
 console.log("contractABI", contractABI);
 
-const contractAddress = '0x5fbdb2315678afecb367f032d93f642f64180aa3'; // Replace with your contract's address
+const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3'; // Replace with your contract's address
 
 // Function to display notifications
 function showNotification(message, isSuccess = true) {
@@ -135,7 +135,7 @@ function showNotification(message, isSuccess = true) {
         showLoading(false);
         showNotification('🔮 Secret Spell Retrieved Successfully! 🔮', true);
       } catch (error) {
-        console.error(error);
+        console.error(error);0xea6c44ac03bff858b476bba40716402b03e41b8e97e276d1baec7c37d42484a0
         showLoading(false);
         showNotification('❌ Failed to Retrieve Secret Spell.', false);
       }
