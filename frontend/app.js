@@ -106,10 +106,6 @@ function showNotification(message, isSuccess = true) {
   
     // Get the user's accounts
     accounts = await web3.eth.getAccounts();
-
-    const blockNumber = await web3.eth.getBlockNumber();
-    console.log("Current block number:", blockNumber);
-
   
     // Handle Store Secret Spell
     document.getElementById('setData').onclick = async () => {
